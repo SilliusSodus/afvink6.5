@@ -29,6 +29,9 @@ public class GUI {
 	private Button btnLaadData_1;
 	private Button btnLaadData_2;
 	private Text text_3;
+	
+	
+	
 
 	/**
 	 * Launch the application.
@@ -46,12 +49,19 @@ public class GUI {
 			}
 		}
 		else{
+			System.out.println("Welcome to my den of aminoacid recognition. We recognize aminoacids here for .. science. And nothing else!\nJust say so if you want to leave:");
+			s.nextLine();
+			final int one =1,two = 1;
+			while(one==two){
+				System.out.println("*Does not listen*. Excellent! Now let's recognize some .. aminoacids~. What would you like us to .. recognize~?:");
+				new AA(s.next()).getValues();
+				System.out.println("Well that was fun right? I enjoyed myself .. VERY much. Again right?:");
+				s.nextLine();
+			}
 			
 		}
 		return;
 	}
-	
-	
 	
 
 	/**
